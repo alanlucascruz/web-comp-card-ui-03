@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avance Dev</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    /> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-balance">
+        <div class="card-header">
+          <div class="col col-left">
+            <h4>Saldo Atual</h4>
+            <h2>R$ 45.381,00</h2>
+          </div>
+          <div class="col col-right">
+            <span class="material-icons">arrow_upward</span>
+            <span class="text">5.3%</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas id="chart-saldo-atual"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-bitcoin">
+        <div class="card-header">
+          <div class="col col-left">
+            <div class="icon-container">
+              <span class="material-icons">currency_bitcoin</span>
+            </div>
+            <div class="description">
+              <h2>Bitcoin</h2>
+              <h4>BTC</h4>
+            </div>
+          </div>
+          <div class="col col-right">
+            <h2>R$ 12.345,00</h2>
+            <div class="percent">
+              <span class="material-icons">arrow_downward</span>
+              <span class="text">4.92%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas id="chart-bitcoin"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Main JS -->
+    <script src="chartSaldoAtual.js"></script>
+    <script src="chartBitcoin.js"></script>
+  </body>
+</html>
