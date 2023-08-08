@@ -18,7 +18,7 @@ body {
   display: flex;
   flex: 1;
   gap: 32px;
-  max-width: 900px;
+  max-width: 450px;
 }
 .card {
   display: flex;
@@ -41,27 +41,6 @@ body {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   overflow: hidden;
-}
-.card-balance .col-left h4 {
-  font-size: 12px;
-  font-weight: 300;
-  margin: 0;
-}
-.card-balance .col-left h2 {
-  font-weight: 400;
-  margin: 8px 0 0 0;
-}
-.card-balance .col-right {
-  display: flex;
-  align-items: center;
-  color: #0df5a9;
-}
-.card-balance .col-right .material-icons {
-  font-size: 20px;
-  margin-top: -4px;
-}
-.card-balance .col-right .text {
-  margin-left: 4px;
 }
 .card-bitcoin .col-left {
   display: flex;
